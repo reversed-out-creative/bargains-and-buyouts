@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -15,7 +16,8 @@
         <div class="col-md-1">
         </div>
         <div class="col-md-2">
-            <img src="images/logo.png">
+            <img id="logo" src="images/logo.png" alt="Bargains and Buyouts Logo">
+            <img id="blueLogo" class="inactive" src="images/logoblue.png" alt="Bargains and Buyouts Logo">
         </div>
         <div class="col-md-5">
         </div>
@@ -26,17 +28,61 @@
                 <li><a href="#">My Account</a></li>
             </ul>
         </div>
+        <div class="nav-menu">
+            <img width="40px" src="images/menu.png">
+        </div>
     </div>
     <div class="container text-center">
         <div class="header-text">
-            <h1>Welcome to the Bargains & Buyouts<br><span class="bold">Exclusive Partner Program</span></h1>
-            <p>A program for Influential Realtors and Interior Designers that provides additional concierge opportunities that benefit the client relationship.</p>          
+            <h1 class="wow fadeInUp animated" data-wow-dration="1s" data-wow-delay=".3s">Welcome to the Bargains & Buyouts<br><span class="bold">Exclusive Partner Program</span></h1>
+            <p>A program for Influential Realtors and Interior Designers that provides additional concierge opportunities that benefit the client relationship.</p>  
+        </div>
+        <div class="row icon-grid">
+            <!-- <div class="col-md-"></div> -->
+            <div class="col-md-4 d-block">
+                <img src="images/discounticon.png">
+                <p>Discounted<br>furniture & accessories</p>
+            </div>
+            <div class="col-md-4 d-block">
+                <img src="images/accessicon.png">
+                <p>Exclusive access<br>to new stock</p>
+            </div>
+            <div class="col-md-4 d-block">
+                <img src="images/stagingicon.png">
+                <p>Opportunities for<br>staging and rental</p>
+            </div>
         </div>
     </div>
 </section>
+<div class="container mt-5 text-center">
+    <h2 class="bold">We would love to have you in the club.</h2>
+    <p>Please sign up below for special offers only available to partners.</p>
+
+    <form class="mt-5" action="">
+        <div class="row">
+            <div class="col-md">
+                <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                <input type="email" placeholder="Email Address" name="emailAddress" id="emailAddress">
+                <input type="text" placeholder="Job Title" name="jobTitle" id="jobTitle">
+            </div>
+            <div class="col-md">
+                <input type="text" placeholder="Last Name" name="lastName" id="lastName">
+                <input type="tel" placeholder="Phone Number" name="phoneNumber" id="phoneNumber">
+                <input type="text" placeholder="Company" name="company" id="company">
+            </div>
+        </div>
+        <input type="checkbox" name="optIn" id="optIn"> <label for="optIn">I authorize Bargains & Buyouts to email me promotions and offers.</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<div class="footer">
+    <p>© 2019 Bargains & Buyouts. All rights reserved. <a href="#">Privacy policy.</a></p>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 
 </body>
 
